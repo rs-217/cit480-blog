@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Test"
+date:   2020-08-29 17:39:04 -0700
+categories: jekyll update
+---
+This is a test blog :) 5th time redoing this... hehe
