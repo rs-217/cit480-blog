@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Blog 0 - Jekyll Configuration for Windows"
+date:   2020-08-30 12:00:00 -0700
+categories: Blogs
+---
+## Getting started with Jekyll.
+# What the heck is a Jekyll?
+Glad you asked, Jekyll is one of the many tools out there on the internet that allows users to create simple static webpages that are used for things such as blogs. As using a tool like jekyll, allows basic HTML files to be displayed on a webpage. With a static site generator it allows users to quickly develop and deploy webpages, which can come in handy for things like blogs, tutorials, and or resumes.
+
+One draw back of why Jekyll might not be for everyone is that it is a simple webpage not used for things like E-Commerce sites e.g. Amazon, Alibaba, etc.
+
+Ok, I want to be quite honest. Setting up Jekyll is probably not the easiest task on a Windows machine.
+
+But with that being said its not impossible, you just have to jump through a couple obstacles to get it working.
+
+Hopefully with some helpful links and doccumentation it won't be too bad... *keyword hopefully*
+
+With that being said let's install Jekyll with a Windows Machine.
+
+**DISCLAIMER: BE PREPARED TO FAIL AND BE CONFUSED ON SETTING UP JEKYLL**
+# Prequisites
+- Install [Ruby](https://rubyinstaller.org/)
+- Install [Jekyll](https://jekyllrb.com/docs/installation/windows/) (great documentation provided by Jekyll)
+
+# Configuration 
+Great you made it! Now once its all installed time for the fun and somewhat easy part of setting up Jekyll. 
+But first things first be sure that jekyll is installed.
+
+To verify open cmd or powershell and use the command:
+
+`$ jekyll -v`
+
+It should spit back out the version you are using, **IF NOT** go ahead and look at the documentation above and retrace your steps.
+
+After verifying now its time to create a folder for your Jekyll site. To create a new jekyll folder type in the command:
+
+`$ jekyll new <foldername>`
+
+With this command this creates a directory with all of the necessary default files in order to get the site up and running.
+**AND BADA-BING BADA-BOOM** you made a Jekyll site!
+
+Now to locally run the Jekyll site and to see the default landing page go ahead and change into the directory the default files in
+
+`$ cd <path-to-jekyll-directory>`
+
+Once you are in there run the command:
+
+`$ bundle exec jekyll serve`
+
+Now it should look like something like this.
+![Picture of cmd](\cit480-blog\assets\jekyll_serve.jpg)
+
+To view the site it is running on local host port 4000. So in order to view the default splash page open up any web browser and enter in the url:
+
+`localhost:4000`
+
+Then is should look a little something like this.
+![Jekyll splash page](\cit480-blog\assets\jekyll_splash.jpg)
+
+Great! Now to shut down the localhost server and press `CTRL + C` and then it will prompt you to confirm to terminate the batch job. Then press 'Y' for both prompts.
+![Jekyll termination](\cit480-blog\assets\jekyll_term.jpg)  
+  
+  
+CONGRATS! And just like that you have created a static site!
