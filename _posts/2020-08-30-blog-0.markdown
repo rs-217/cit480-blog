@@ -49,17 +49,17 @@ Once you are in there run the command:
 `$ bundle exec jekyll serve`
 
 Now it should look like something like this.
-![Picture of cmd](/cit480-blog/assets/jekyll_serve.jpg)
+![Picture of cmd](/cit480-blog/assets/jekyll_serve.JPG)
 
 To view the site it is running on local host port 4000. So in order to view the default splash page open up any web browser and enter in the url:
 
 `localhost:4000`
 
 Then is should look a little something like this.
-![Jekyll splash page](/cit480-blog/assets/jekyll_serve.jpg)
+![Jekyll splash page](/cit480-blog/assets/jekyll_serve.JPG)
 
 Great! Now to shut down the localhost server and press `CTRL + C` and then it will prompt you to confirm to terminate the batch job. Then press 'Y' for both prompts.
-![Jekyll termination](/cit480-blog/assets/jekyll_serve.jpg)  
+![Jekyll termination](/cit480-blog/assets/jekyll_serve.JPG)  
   
 
 CONGRATS! And just like that you have created a static site!
