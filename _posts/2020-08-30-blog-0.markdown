@@ -55,11 +55,11 @@ To view the site it is running on local host port 4000. So in order to view the 
 
 `localhost:4000`
 
-Then is should look a little something like this.
-![Jekyll splash page](/cit480-blog/assets/jekyll_serve.JPG)
+Then it should look a little something like this.
+![Jekyll splash page](/cit480-blog/assets/jekyll_splash.JPG)
 
 Great! Now to shut down the localhost server and press `CTRL + C` and then it will prompt you to confirm to terminate the batch job. Then press 'Y' for both prompts.
-![Jekyll termination](/cit480-blog/assets/jekyll_serve.JPG)  
+![Jekyll termination](/cit480-blog/assets/jekyll_term.JPG)  
   
 
 CONGRATS! And just like that you have created a static site!
