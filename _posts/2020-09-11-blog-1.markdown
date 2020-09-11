@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "Blog 1 - Docker Basics"
+date:   2020-09-10 12:00:00 -0700
+categories: Blogs
+---
+## Docker Basics
+# What is docker?
+Docker is a platform that makes running, creating, and deploying applications easier with the help of **containers**. What a container does is allows a developer to neatly package an application with all the necessary parts it needs to run properly. By using containers not only does it help deploy applications, but also helps run each virtualized environment run seamlessly and simutaneously. 
+![Docker diagram](/cit480-blog/assets/blog1-docker-diag.JPG)
+
+In this blog, I will go over some basic docker commands as well as show how to get started with making your first container!
+
+# Prerequisites
+- Install [Docker](https://docs.docker.com/engine/install/ubuntu/) (this will lead to the installation of docker engine on ubuntu)
+
+# Let's begin
+To make a new container use this command:
+
+`$ docker run --name <input name of container> -it <distrubution you want to use> /bin/bash`
+
+If done correctly it will look something like this.
+![Container created](/cit480-blog/assets/blog1-docker-create.JPG)
+
+Now what this does is:
+- `--name` is the command that lets the user decide what name to give the container.
+- `-it` is the interactive terminal command that throws in the user into the container once it has finished creating.
+- Right after the `-it` command specify an OS you would like to use in the container. In this case I would like to use Ubuntu, by default without specifying a version docker will always grab the latest version! If you wanted to specify a version you would do it like this `$ docker run --name test -it ubuntu:18.04 /bin/bash` then it will create a container with ubuntu 18.04 installed!
+
+Moving on! So to get out of a docker container all you have to do is type is `# exit` and it will get you out the docker container. It will save it for next time.
+![Container exit](/cit480-blog/assets/blog1-docker-exit.JPG)
+
+So now if you type in the command `docker ps -a` it will show you all of the containers you have created.
+![Docker ps -a](/cit480-blog/assets/blog1-docker-ps.JPG)
+
+To get back into the docker container you first start it up by using: 
+
+`$ docker start <containter name>`
+
+Then to go into the container use the command:
+
+`$ docker exec -it <container name> /bin/bash`
+![Docker start](/cit480-blog/assets/blog1-docker-start.JPG)
+
+# AND THATS IT! YOU LEARNED THE BASICS OF DOCKER
+
+# Commands used
+- `$ docker run --name <name> -it <distro you want to use> /bin/bash` (create a container)
+- `# exit` (exit out of container)
+- `$ docker ps -a` (list all containers)
+- `$ docker start <containter name>` (spins up stopped container)
+- `$ docker exec -it <container name> /bin/bash` (enter in a container)
