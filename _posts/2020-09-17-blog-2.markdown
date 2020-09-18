@@ -7,7 +7,7 @@ categories: Blogs
 ## Github Basics
 # What is Github?
 Github is a platform that allows many developers to collaborate their work, provide hosting to software development, as well as offers great version control through various projects. As Github is derived from Git. Many open source projects use Git to keep a history of any changes the project may undergo as Github is designed to make it better to manage these projects.
-<img src="/cit480-blog/assets/blog2-git.PNG" width=400>
+![Git vs Github](/cit480-blog/assets/blog2-git.PNG)
 
 # Installation 
 Here are some helpful links to help install github and git on your windows machine!
