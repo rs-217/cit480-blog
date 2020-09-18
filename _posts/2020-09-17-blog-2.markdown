@@ -31,3 +31,11 @@ Step 1: `$ git add .`
 Step 2: `$ git commit -m "commit message"`
 
 Step 3: `$ git push origin <branch name>`
+
+It should look a little something like this!
+![Git commands](/cit480-blog/assets/blog2-com.PNG)
+
+Then when we look at our repository online it also shows the commit message we put when we run the command `$ git commit -m "commit message"`.
+
+Keep in mind that the message will only appear to files that have been changed! In this case we added pictures to the assets directory as well as the _posts directory.
+![Git website](/cit480-blog/assets/blog2-web.PNG)
