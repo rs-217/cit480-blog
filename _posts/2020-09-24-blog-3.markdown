@@ -12,7 +12,7 @@ Another term for is is called Infrastructure as a Service or (IaaS), essentially
 
 ## Cloud computing vendors
 There are many cloud computing vendors especially in this day of age since every business seems like they have the need to go "server-less". Some major providers are Amazon Web Services, Google Cloud, Microsoft Azure, VMWare, IBM Cloud, and Alibaba Cloud.
-![Cloud Providers](/cit480-blog/assets/blog3-cloud.PNG)
+![Cloud Providers](/cit480-blog/assets/blog3-cloud.png)
 
 Although the most commonly used is Amazon Web Services.
 
