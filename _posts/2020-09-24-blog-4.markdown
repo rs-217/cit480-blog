@@ -11,7 +11,7 @@ A dockerfile is essentially a text file that is comprised up of commands that ca
 The significance of a dockerfile is that this allows the user to automate docker images just by reading instructions from a Dockerfile.
 
 ## Some dockerfile commands used
-![Dockerfile Cheatsheet](/cit480-blog/assets/blog4-command.PNG)
+![Dockerfile Cheatsheet](/cit480-blog/assets/blog4-command.png)
 As I will not be covering every single command I would like to go over some that are significant like:
 - `FROM` command allows the user to spin up a container using any OS they desire.
 - `RUN` command allows the user to call a command they would normally use in the terminal
