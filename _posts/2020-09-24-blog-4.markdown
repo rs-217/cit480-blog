@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Blog 4 - Dockerfile"
+date:   2020-09-29 12:00:00 -0700
+categories: Blogs
+---
+# Dockerfile basics
+## What is a dockerfile?
+A dockerfile is essentially a text file that is comprised up of commands that can be called upon by a user to build a docker image. A docker image is an operating system used in a docker container. But the difference is with using a dockerfile, a user can tailor an image to their needs or preferences.
+
+The significance of a dockerfile is that this allows the user to automate docker images just by reading instructions from a Dockerfile.
+
+## Some dockerfile commands used
+![Dockerfile Cheatsheet](/cit480-blog/assets/blog4-command.PNG)
+As I will not be covering every single command I would like to go over some that are significant like:
+- `FROM` command allows the user to spin up a container using any OS they desire.
+- `RUN` command allows the user to call a command they would normally use in the terminal
+- `WORKDIR` command allows the user to change the directory and to call any commands or arguments into that directory
+- `CMD` command can allow the user to execute a specific command within the container BUT THIS COMMAND CAN ONLY BE USED ONCE PER DOCKERFILE
+
+## Docker commands
+Here are some docker commands that will be used to create the image from the Dockerfile!
+- `docker build -t <Any name of image> .` (dot at the end) this command essentially builds the image from the dockerfile **be sure that you are in the same directory of the dockerfile it is located in**
+- `docker run –rm –it <name of image> /bin/bash` this command spins up the image that is created by the Dockerfile. `-rm` destroys the container once exited and the `it` command runs the interactive terminal.
