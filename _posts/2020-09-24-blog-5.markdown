@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Blog 5 - Ansible Basics"
+date:   2020-09-29 12:00:00 -0700
+categories: Blogs
+---
+# What is Ansible?
+![Ansible Logo](/cit480-blog/assets/blog5-logo.png)
+Ansible is an automation tool that allows the user to configure and manage servers at one location. Instead of manually configuring a server one by one (which can be a pain to do if there is more than one server to be configured) ansible allows the user to create a file that tailors to their configuration needs and can be ran time after time again. One benefit of this is that each server that is configured by ansible is configured the same way.
+
+## Benefits of using Ansible
+Ansible is a great tool for server configuration automation as it 
+- Reduces human error
+- Quickly scales servers in demand
+- Automates application deployment
+
+## What makes Ansible better than alternatives?
+Other alternatives that are similar to Ansible include
+- Puppet
+- Chef
+- Salt
+
+But what makes Ansible stand out from the rest is that, Ansible is easier to use for beginners due to the use of yaml files. The reason why many beginners may pick up Ansible first is because of how simple and easy the yaml file can be configured. As yaml files are easier because of the fact that it is just like plain english.
+
+## Things to keep in mind when using Ansible
+Before you start messing around with Ansible be sure to keep in mind:
+- Target server must have python installed
+- User can only run commands on the server managed by Ansible through SSH
+- You must use an Ansible playbook to utilize the quick and scalable server configurations
