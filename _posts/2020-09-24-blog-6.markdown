@@ -6,7 +6,7 @@ categories: Blogs
 ---
 # What is WSL?
 Windows Subsystem for Linux is a feature that is offered on windows that allows Linux to run Natively on the Windows operating system. As this allows a layer for Linux programs to run in a Windows 10 version of the bash shell. And lets be real the Windows command line isn't enough. Using WSL offers many powerful tools available for Windows users. As the architecture for wsl is way different than a traditional virtual machine. As you can see by this diagram:
-![WSL](/cit480-blog/assets/blog6-wsl.png)
+![WSL](/cit480-blog/assets/blog6-wsl2.png)
 
 Whereas this is the architecture for a traditional virtual machine:
 ![VM](/cit480-blog/assets/blog6-vm.png)
