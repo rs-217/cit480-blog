@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Blog 6 - Windows Subsystem for Linux"
+date:   2020-10-15 12:00:00 -0700
+categories: Blogs
+---
+# What is WSL?
+Windows Subsystem for Linux is a feature that is offered on windows that allows Linux to run Natively on the Windows operating system. As this allows a layer for Linux programs to run in a Windows 10 version of the bash shell. And lets be real the Windows command line isn't enough. Using WSL offers many powerful tools available for Windows users. As the architecture for wsl is way different than a traditional virtual machine. As you can see by this diagram:
+![WSL](/cit480-blog/assets/blog6-wsl.png)
+
+Whereas this is the architecture for a traditional virtual machine:
+![VM](/cit480-blog/assets/blog6-vm.png)
+
+So as a result of allowing the Linux kernel running side by side Windows this has allowed the Linux OS as a lightweight virtual machine for Linux.
+
+## Benefits of WSL
+1. This is a lightweight VM that allows developers on Windows access to many powerful tools on different linux distros without sacraficing performance on their machines.
+2. Each person using WSL can have many distros on their machines as well as have many Linux OS as they please.
+3. The Linux terminal is way more powerful than the traditional Windows command prompt.
+4. **Docker utilizes WSL! So go get WSL!**
+
+## In Conclusion
+WSL allows Windows users to have a fully fledge Linux Kernel in their machines with many poweerful tools at their disposal. As the development of WSL 2 and the efficient architecture Microsoft has developed this is a game changer in the world of virtual environments.
