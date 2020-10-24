@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Blog 7 - Ubuntu or Windows?"
+date:   2020-10-23 12:00:00 -0700
+categories: Blogs
+---
+# Which OS should I use?
+Possibly one of the hottest question today is, Windows or Linux? Some might say Ubuntu over Windows any day! And others might comeback and say Windows have far more programs compatable compared to Ubuntu. As both may be fairly correct, picking one that dominates the world of tech is like comparing name brand tylenol to store brand tylenol. While one is marked up a lot more due to the name, the store-brand may still produce the same result.
+
+![Ubuntu vs Windows](/cit480-blog/assets/blog7-vs.jpg)
+
+As some people don't want to hear this answer, it all depends!
+
+## How to decide?
+### Why to use Ubuntu?
+1. **Ubuntu is free.** YES its true Ubuntu starts at a cost of free! As long as your system turns on and has a usb drive more than likely your computer will run Ubuntu.
+2. **Revive your old laptop!** Yup! You heard that right bring back your old laptop collecting dust with installing Ubuntu as Ubuntu/Linux can run on almost anything!
+3. **Great for developers!** Linux is great for developers and programmers as it is free and open source so there is not need to spend any more money on licenses and softwares!
+
+### Why to use Windows?
+1. **Program compatability!** Windows is a great OS for anyone that wants a wide range of applications to be compatable. Great OS for a gaming pc!
+
+
+## In conclusion
+Both operating systems are great in their own ways! If you are running windows and want to give Ubuntu a shot you can always install WSL (Windows Subsystem for Linux), install a virtual machine, or just make your system dual boot Windows and another Linux distro and have the best of both worlds! 
