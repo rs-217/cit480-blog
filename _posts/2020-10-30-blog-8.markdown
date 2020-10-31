@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Blog 8 - Terraform Basics"
+date:   2020-10-30 12:00:00 -0700
+categories: Blogs
+---
+# Terraform Basics
+
+## What is Terraform?
+Terraform is another tool that is used to create, manage, and destroy infrastructure with code. While using terraform you can easily manage and reuse code that is already written and use it time and time again. A great benefit using Terraform is that an administrator can easily deploy and mantain many servers with a couple keystrokes away.
+
+### Benefits of Infrastructure as Code?
+The benefits of infrastructure as code can greatily benefit many DevOps as the benefits include:
+- **Improving speed:** As automation can greatly improve deploying and creating infrastructure as this gets rid of a user or admin to manually manage through an interface
+- **Improves reliability:** With infrastructure as code the resources are configured exactly as it is declared in the Terraform file, so the error of misconfiguring a server can be greatly reduced!
+- **Great for experimentation, testing, and optimization:** Due to making the utilization of Infrastructure as code, it has made creating and destorying infrastructure very easy and manageable you can make and test many environments in a matter of seconds. Which makes it great for a DevOps engineer or a System Admin to quickly create new infrastructure for testing purposes without sacraficing any resources!
+
+## Useful commands in Terraform
+- `terraform version` gives what version of terraform is installed
+- `terraform apply` builds or changes infrastructure
+- `terraform destroy` destroy the terraform-managed infrastructure
+- `terraform init` initializes a terraform working directory
+- `terraform import` imports existing infrastructure into terraform
+
+These are just some of the terraform commands that may be quite useful but there are many more. Luckily terraform provides great [documentation](https://www.terraform.io/docs/commands/index.html)!
+
+## Final Thoughts
+All in all, Terraform is a great skill/tool to get under your toolbelt. As this not only allows you to quickly build and deploy infrastructure, but it also makes your job a whole lot easier! So give it a shot you have nothing to lose and a great plus is that Terraform provides great documentation so the learning process is not too intimidating!
