@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Blog 9 - Cloning Git Repository"
+date:   2020-11-06 12:00:00 -0700
+categories: Blogs
+---
+# Cloning a GIT Repository
+Possibly one of the most necessary commands you ever need if you are working with Git, which is the clone command.
+
+## What does the clone command do?
+The clone command used in Git is used to copy a repository locally on your machine to the repository stored on Github. A benefit of working on files locally is that this allows the editor to edit and make changes to the files on the repository rather than working on the code directly from the repo. 
+### Why is this necessary?
+As Github is primarily known as a way of source control, this allows anyone to make any changes to the code that may improve the project and the owner of the repository can see all the changes the editor has made. This allows the owner of the repository to decide if the recent changes made by the editor should be included in the main branch (main project).
+
+## Now for the tutorial
+### Step 1 - Create a place/directory to store your files
+The very first step is to ensure that the Git repo you want to clone has an **empty** directory to be placed in. You can place it anywhere as long as it is easy for you to find. In this case I put it in my GIT_Local directory located in the documents directory.
+
+`$ cd mkdir /Documents/GIT_Local`
+![Mkdir](/cit480-blog/assets/blog-9-mkdir.png)
+
+### Step 2- Change directory
+Change into the directory you want to clone the git repo.
+
+### Step 3 - Obtain the git copy URL
+To obtain the url access the repository website on Github and click on the 'Code' drop down menu and click on the clipboard.
+
+![Copy Git](/cit480-blog/assets/blog-9-url.png)
+
+### Step 4 - Run the clone command
+To clone the Git repository use the command
+
+`$ git clone <repo-url>`
+
+### Step 5 - Check if the repository is installed
+After that you should be notified that Github is cloning the repository and be sure to check you are able to locate it. And just like that you have cloned a Git Repository to your machine!
+
+![Finished](/cit480-blog/assets/blog-9-fin.png)
