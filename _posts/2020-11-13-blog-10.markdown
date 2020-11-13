@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Blog 10 - Creating EC2 instance and S3 Bucket"
+date:   2020-11-06 12:00:00 -0700
+categories: Blogs
+---
+# Setting up an EC2 Instance and Attaching an S3 Bucket
+## What is an EC2 and a S3 Bucket?
+An **EC2 instance** (a.k.a. elastic cloud compute) is a service that AWS offers that allows customers to rent a virtual computer that is used to run their own applications. This service is very scalable and versatile as a customer is allowed to create and deploy their server at a couple clicks. With an EC2 instance the customer is allowed to control where their instance is located at and also add additional or take away any resources they may need or get rid of.
+
+**Amazon S3** (a.k.a. simple cloud service) is a service that is offered by AWS that provides an attached storage that handles any type of object that a user may have to store. Whether it is internet applications, backup and recovery, disaster recovery, and much more an S3 bucket is capable of handling it all!
+
+## How to create an EC2 instance and S3 Bucket 
+### Step 1: Choosing Amazon Machine Image for EC2 instance
+![EC2 AMI selection](/cit480-blog/assets/blog-10-ec2.png)
+First, you have to choose which AMI (Amazon machine image) you want to use for the EC2 instance. In this example I will be choosing the Ubuntu server.
+
+### Step 2: Configuring Security Group
+Prior configurations before the security group I set the default configurations AWS has set to be eligible for the free tier so it does not eat up any resources.
+
+Next thing you may want to do is configure who is accessible to your instance. In my instance I have allowed the rule to only allow ssh to my machine and allow any HTTP traffic to be accessible to anyone.
+
+![EC2 security](/cit480-blog/assets/blog-10-sec.png)
+
+### Step 3: Review and Launch
+Finally, review and launch your new EC2 instance!
+
+### Step 4: Creating an S3 Bucket
+Now to create an S3 bucket, click the drop down menu for services and look for the service **S3** under storage.
+![S3 bucket](/cit480-blog/assets/blog-10-s3.png)
+Then click on create bucket and give a name for your new bucket.
+
+### Step 5: Creating an S3 role for s3 access
+Next, Lets create a new role for S3 Access! First click the service list and find the IAM service.
+Then click the "Roles" tab under IAM resources, then create role button on the top left.
+![Creating Role](/cit480-blog/assets/blog-10-role.png)
+
+
+Go ahead and find the ec2 role and click to continue.
+
+### Step 6: Policy selection
+Then select the S3 full access.
+![S3 Full access](/cit480-blog/assets/blog-10-poli.png)
+Then add any tags if you need any and give a name for your role!
+
+### Step 7: Attactching the policy to the instance
+Now, open the EC2 console. Then highlight the instance you want to change the security and click on the actions drop down menu.
+Then click modify IAM role and select the role you just created and click save.
+
+### Step 8: Connect to your instance
+Now, you should connect your instance and install aws cli with this command `$ sudo apt install awscli`
+
+### Step 9: Checking s3 bucket.
+Since you attached the IAM policy you should be able to see the s3 bucket in your EC2 instance and you can check by
+`$ aws s3 ls` and it should list all the s3 buckets you have attached.
+
+Copying a file to s3 bucket
+`$ aws s3 cp server.txt <name of s3>`
+
+AND BADA-BING BADA-BOOOM you have created an EC2 instance and also attached an s3 bucket as well!
+
+### References 
+[Amazon EC2](https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud)
+
+[Amazon S3](https://en.wikipedia.org/wiki/Amazon_S3)
