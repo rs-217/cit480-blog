@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Blog 11 - Zerologon Vulnerability"
+date:   2020-11-19 12:00:00 -0700
+categories: Blogs
+---
+# Zerologon
+![Zerologon](/cit480-blog/assets/blog-11-zero.png)
+## What is Zerologon?
+Possibly one of the most talked about in the security community is a new vulnerability named **Zerologon**. 
+
+**What is Zerologon?** Zerologon is one of the most recent vulnerabilities today rated by the CVSS (Common vulnerability scoring system) as a 10 out of 10. This vulnerability is essentially allowing attackers/hackers to spoof a domain controller account and steal domain credentials and take over a whole domain. Once a domain has been successfully taken over now the attackers have the ability to shut down an entire organizational domain.
+
+Essentially this allows the attackers to elevate privileges and grant them access to do anything they please.
+
+## How does this work?
+As mentioned by Trend Micro, `For attackers to exploit this vulnerability, they must be able to set up a TCP session with a DC`. Whether the attacker is setting up a TCP session internally OR externally as long as they are able to establish a TCP session they are able to take advantage of this vulnerability.
+
+Essentially what the attacker needs to do is obtain a cipher text with all zeros and to obtain a cipher text from a key. Mentioned by Tom Tervoot (the person who discovered this vulnerability) mentioned that the likelihood of obtaining a ciper text with all 0's is 1 out of 256 keys.
+
+Okay, you may be thinking how is any of that important? Essentially, once the attackers are able to obtain the cipher text filled with all zeros the ball is in their park and have the ability to do anything they want. Obtaining the cipher text allows them to bypass the authentication and give them heightened privileges to do anything they want.
+
+What makes this vulnerability so **dangerous** is the fact that finding this key takes about 2 to 3 seconds. On top of that when logging into your profile onto the machine there is no limit at the amount of attempts someone can do making it very easy for anyone to spoof or highjack a domain controller account.
+
+## Soulution?
+Luckily the vulnerability has been patched so organizations have nothing to worry about. The unfortunate part is that those who did not apply the patch is still at risk!
+
+## References 
+[https://www.trendmicro.com/en_us/what-is/zerologon.html#attack-tm-anchor](https://www.trendmicro.com/en_us/what-is/zerologon.html#attack-tm-anchor)
+[https://www.bleepingcomputer.com/news/security/microsoft-warns-of-ongoing-attacks-using-windows-zerologon-flaw/](https://www.bleepingcomputer.com/news/security/microsoft-warns-of-ongoing-attacks-using-windows-zerologon-flaw/)
