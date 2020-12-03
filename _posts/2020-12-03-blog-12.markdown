@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "Blog 12 - Yarn Package Manager"
+date:   2020-12-03 12:00:00 -0700
+categories: Blogs
+---
+![Yarn Logo](/cit480-blog/assets/blog12-yarn.jpg)
+# What is yarn?
+First things first, what is yarn? **Yarn** is a package manager that makes it easy for anyone to share code with other developers. Yarn is developed by Facebook and it is an improvement of NPM, as Yarn is an improvement from NPM. Yarn fixes the issues NPM has as it makes Yarn more appealing to use over NPM. Yarn is open source and is also fully compatable with the NPM registry and can also work alongside NPM. Overall yarn is much more secure, safer, and a reliable alternative.
+
+### Also what is a package manager?
+Essentially a package manager is a piece of software on your computer that keeps track of what software has been installed on your computer. **Essentially its a software that manages other software on your computer**. BUT a package manager allows us to install new software, upgrade, or remove software that have been previously installed a lot easier.
+
+## How do you create a yarn package?
+First of all you must install yarn on your system before using. Here is a helpful [link](https://classic.yarnpkg.com/en/docs/install#debian-stable) on getting you started with the installation process.
+
+Next after you have installed here is a brief walkthrough on creating your first project:
+1. Starting a new project `yarn init`
+2. Next, adding a dependancy to the yarn project with these commands:
+    - `yarn add [package]`
+    - `yarn add [package]@[version]`
+    - `yarn add [package]@[tag]`
+3. To install a yarn package and all its dependencies with it run:
+    - `yarn install`
+4. And all the dependencies should be installed on your machine!
+
+## Some package managers you may heard of
+- Steam
+- Uplay
+- Homebrew (for OSX)
+- apk-tools (for Linux)
+- wpkg (for Windows)
+
+## Conclusion
+Package managers are everywhere and makes it easier for the client to easily manage, upgrade, and remove software on their machines. Yarn is just another tool in the toolbox that allows developers to quickly share and export code to other developers.
