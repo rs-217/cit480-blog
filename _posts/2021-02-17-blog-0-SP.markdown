@@ -5,9 +5,8 @@ date:   2021-02-17 12:00:00 -0700
 categories: Blogs
 ---
 # Node.js
-## Well what is it?
 ![Node.JS logo](/cit480-blog/assets/sp-blog-0-node.png)
-
+## Well what is it?
 Node.js is used to build back-end environments for web applications. Some great benefits of this technology includes:
 - No need to learn a new language just use **JavaScript**!
 - Since it uses JavsScript the naming convention can be consistent and have "cleaner" code.
