@@ -14,7 +14,7 @@ Node.js is used to build back-end environments for web applications. Some great 
 - Great for rapid deployment and prototyping!
 - Great for scalability!
 
-Node.js is derived from Google's V8 JavaScript engine that executes JavaScript code that cannot normally run in a browser. Since both Google Chrome (the web browser) and Node.js use the same engine but they both provide different environements for JavaScript.
+Node.js is derived from Google's V8 JavaScript engine that executes JavaScript code that cannot normally run in a browser. Since both Google Chrome (the web browser) and Node.js use the same engine but they both provide different environments for JavaScript.
 
 In an essence Node.js is **NOT** a framework or a programing language. It is a runtime environment for executing JavaScript code. In other words Node.js is a server!!!
 
@@ -32,5 +32,6 @@ In an essence Node.js is **NOT** a framework or a programing language. It is a r
 - User should be already familiar with JavaScript
 
 ## Sources
-![https://www.youtube.com/watch?v=TlB_eWDSMt4](https://www.youtube.com/watch?v=TlB_eWDSMt4)
-![https://nodejs.org/en/about/](https://nodejs.org/en/about/)
+[https://www.youtube.com/watch?v=TlB_eWDSMt4](https://www.youtube.com/watch?v=TlB_eWDSMt4)
+
+[https://nodejs.org/en/about/](https://nodejs.org/en/about/)
