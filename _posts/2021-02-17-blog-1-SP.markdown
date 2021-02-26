@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Blog 1 SP - CI/CD Pipelines"
+date:   2021-02-26 12:00:00 -0700
+categories: Blogs
+---
+# CI/CD Pipelines
+![CI/CD pipeline visual](/cit480-blog/assets/blog-1-cicd.png)
+## What is a CI/CD pipeline?
+CI/CD Stands for continuous integration and continuous delivery/deployment. This is a way to allow developers to automate the process of integrating the code and deploying the code so it is one less step a developer needs to worry about.
+
+## How does CI work?
+Continuous integration first starts off as code that has been pushed to a repository like Github, CodeCommit, or Bitbucket. Then it gets passed off to a testing/build center to check the code as soon as it is pushed. Finally the developer can receive feedback on the commited code to see if there is anything to be fixed.
+
+### Why use CI?
+There is a great advantage of using a system like this as it allows:
+- Finding earlier bugs so it can be easily fixed
+- Deliver faster code that can be quickly tested
+- Have the ability to deploy often
+
+## How does CD work?
+Continuous deployment starts off at the deployment server, as the deployment server is in charge of deploying every passing build that is passed off by the build server. Then the deployment server then passes along the code to the application server for any changes that is approved for the final product.
+
+### Why use CD?
+Using a CD offers a great structure in:
+- Ensuring that software can be released reliably when needed
+- Ensures that deployments happen often and at a quickly manner
+
+## Technologies for CI/CD 
+Some technologies used in the CI/CD stack are:
+- Travis CI
+- AWS CodeCommit
+- AWS CodeBuild
+- Jenkins CI
+- Github
+- AWS Elastic beanstalk
+- AWS CodeDeploy
+
+![cicd blueprint](/cit480-blog/assets/sp-blog1-blue.png)
+
+## Summary
+All in all a CI/CD pipeline cannot only make a team's workflow faster, but it can also provide a standardized way to quickly deploy any changes needed for the product as well as provide quick feedback for a developer's code to detect any bugs that may seep through. 
