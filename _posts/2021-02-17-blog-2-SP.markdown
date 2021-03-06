@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Blog 2 SP - What Database to use?"
+date:   2021-02-26 12:00:00 -0700
+categories: Blogs
+---
+![title DB](/cit480-blog/assets/sp-blog2-a.png)
+
+# Deciding what type of Database to use.
+When building an application, it is important to decide which type of database to implement. Whether it is a relational database or non-relational, sql or nosql all of it makes a difference. So where do you start?
+
+## Starting to choose a database.
+When deciding which database to implement there are a couple things to be considered:
+1. The complication of queries
+2. The amount of data needed
+3. The speed of data that will be delivered
+
+## Relational vs Non-relational
+There are two types of databases which are relational and non-relational.
+
+**Relational Databases**
+- Stores data in column and rows; similar to a spreadsheet
+- Data is stored in tables
+
+
+**Non-relational Databases**
+- In non-relational databases there are 4 different types of to store its data
+    -  Document-oriented
+    -  Key-Value Stores
+    -  Wide-Column Stores
+    -  Graph Stores
+- NoSQL databases allow more flexibility on types of data stored
+
+![database pictures](/cit480-blog/assets/sp-blog2-db.png)
+
+## Database technologies
+There are so many open source databases that are readily available for anyone to use. When finding out which database technology to implement into your technology stack it can be quite overwhelming to decide. For instance:
+- MySQL
+- Oracle
+- Microsoft SQL Server
+- PostgreSQL
+- DB2
+- MongoDB
+- MariaDB
+
+There is just so many! As each database have distinct features.
+
+## Conclusion
+Although it may be overwhelming to decide which database to go with in your technology stack, some tips I suggest before deciding is declaring what classiications and characteristics you need to organize your data. Once it is set in stone and clear what the organization is looking for is to look at the different types of technologies/databases available for the type of database you decide to use. 
+
+## Sources
+[https://www.alooma.com/blog/types-of-modern-databases](https://www.alooma.com/blog/types-of-modern-databases)
+[https://www.izenda.com/relational-vs-non-relational-databases/](https://www.izenda.com/relational-vs-non-relational-databases/)
