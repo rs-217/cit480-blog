@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Blog 3 SP - Passport.js"
+date:   2021-02-26 12:00:00 -0700
+categories: Blogs
+---
+![passport.js logo](/cit480-blog/assets/blog-3-sp-logo.png)
+# Passport.js
+Passport.js is authentication middleware for Node.js that can be dropped into any Express.js web application. With Passport.js it can support authentication with the traditional username and passowrd or use Facebook, Twitter, and more. 
+
+## Features
+Features of Passport.js include:
+- 300+ Authentication Strategies
+- SSO (Single-Sign On) 
+- Customizable strategies to use
+
+With the widely available strategies that are already provided by passport.js, it is easy to use as well as easy to configure authentication.
+
+## Example Snippet
+Below is an example of a configuration strategy (provided by passportjs.org) that incorporates a username and password.
+![Passport.js config](/cit480-blog/assets/blog-3-sp-code.png)
+
+### What is it doing?
+`var passport = require('passport')` is used to call which library/dependency we need, which in this case is passport.js.
+
+`, LocalStrategy = require('passport-local').Strategy;` this line determines which strategy to use in the web app.
+
+![Passport-local](/cit480-blog/assets/blog-3-sp-local.png)
+
+Next, with the screenshot above (provided by Passport.js) shows the actual function that handles any errors. As you can see passport.js handles the error if the user is not found in the databse and will return an error message if so.
+
+### Things to consider when using passport.js
+Although Passport.js handles the authentication very well there are some things that you may still need to configure when going about using this technology.
+
+1. **Have a database to store and call any user information.** -- So now once you have the authentication side set up, you now need to have a database attached to the coniguration to store and call any user information that is given or requested.
+
+2. **Determine if application will be incorporating sessions.** -- Another thing to consider is to determine if your application will need to use a session to allow the user using the application to have their personalized information present while they are still in the domain. Let's face it, it can be quite annoying if you wanted to add something to your wishlist and everytime you need to do it you need to sign in over and over again. With incorporating sessions a user will be assigned a token to remember that they have been authenticated to use the resources available to them.
+
+3. **Determine how to obtain user information (if there are new users using the application)** -- One last thing to keep in mind is that, now you need a way to somehow grab user information to store into a database if a user decides to sign up for the service. i.e. a registration page.
+
+## Sources
+[http://www.passportjs.org/](http://www.passportjs.org/)
