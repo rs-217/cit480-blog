@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blog 3 SP - Passport.js"
-date:   2021-02-26 12:00:00 -0700
+date:   2021-03-12 12:00:00 -0700
 categories: Blogs
 ---
 ![passport.js logo](/cit480-blog/assets/blog-3-sp-logo.png)

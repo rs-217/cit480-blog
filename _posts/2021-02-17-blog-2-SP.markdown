@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blog 2 SP - What Database to use?"
-date:   2021-02-26 12:00:00 -0700
+date:   2021-03-05 12:00:00 -0700
 categories: Blogs
 ---
 ![title DB](/cit480-blog/assets/sp-blog2-a.png)
