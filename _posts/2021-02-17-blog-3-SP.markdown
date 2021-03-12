@@ -4,7 +4,7 @@ title:  "Blog 3 SP - Passport.js"
 date:   2021-03-12 12:00:00 -0700
 categories: Blogs
 ---
-![passport.js logo](/cit480-blog/assets/blog-3-sp-logo.png)
+![Passport.js logo](/cit480-blog/assets/blog-3-sp-logo.png)
 # Passport.js
 Passport.js is authentication middleware for Node.js that can be dropped into any Express.js web application. With Passport.js it can support authentication with the traditional username and passowrd or use Facebook, Twitter, and more. 
 
