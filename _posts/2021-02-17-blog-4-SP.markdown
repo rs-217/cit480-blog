@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Blog 4 SP - How does Node.js work?"
+date:   2021-03-25 12:00:00 -0700
+categories: Blogs
+---
+# How does Node.js work?
+Node.js is a runtime environment derived from the V8 (a.k.a. google chome/chromium engine) that provides an intuitive way to manage the back-end of a webserver without having to learn a new language. 
+
+With this type of architecture, middleware is required in order to allow any type of functionality to be made in the Node.js environment. One of the most commonly used middlewares is Express.
+
+![node js arch](/cit480-blog/assets/blog-4-sp-dig.png)
+![node js top](/cit480-blog/assets/blog-4-sp-top.png)
+
+### Express.js
+What is Express? Express is a routing and middleware web gramework that has minimal functionality of its own. An express application is essentially a series of middleware function calls.
+
+By using express, you can route which web page your server should respond if a client requests a webpage. Examples can be looked at [here](https://expressjs.com/en/starter/basic-routing.html).
+
+So as far as authentication, another middleware should help with the process of that. As Express is completely out of the scope of that, which brings us to Passport.js.
+
+### Passport.js - for authentication
+What is Passport.js? Passport.js is middleware that is used in the Node.js environment that handles authentication as well as error handling.
+
+As passport.js is extremely flexibile and modular, it can be dropped into any application without any real hassel. Luckily, passport.js provides many strategies on how the user will want the client to authenticate their credientials. Strategies can be looked at [here](http://www.passportjs.org/packages/). 
+
+Looking at a deeper dive into the modules it already offers, some strategies already included has authentication through the traditional username and password, google, twitter, facebook, and much more!
+
+## Conclusion
+In conclusion, as you can see with using node.js middleware is required to have the full potential of a powerful back-end without having the need to learn a new language (as long as you are somewhat profficient in JavaScript). Luckily the community is strong and there are many resources to be discoverd if one does get stuck on an issue they can't debug.
