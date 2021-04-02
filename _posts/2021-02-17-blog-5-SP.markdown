@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Blog 5 SP - Setting Up MongoDB into Node.js"
+date:   2021-04-02 12:00:00 -0700
+categories: Blogs
+---
+![mongodb logo](/cit480-blog/assets/blog-5-sp-mongo.png)
+
+# What is MongoDB? 
+MongoDB is a free open-source document database that uzilizes NoSQL. It stores data in JSON-like format to increase efficiency and to also support more types of data.
+
+### Benefits of using MongoDB
+- Its free!!!
+- Great for scaling horizontally
+- Architecture can support huge volumes of both data and traffic
+- Can support many data types 
+
+### Prerequisits 
+Before establishing/configuring a connection in your node.js app, be sure that you installed MongoDB into your system and that it is running! Without installation, it will refuse to establish a connection.
+
+### Step: 1 - installing mongodb package
+The first step to installing mongodb into node.js is to download the dependencies and drivers using npm (Node Package Manager) run the command `npm install mongodb` in where your package.json file is located.
+
+### Step: 2 - create a database
+Next step is to create a new js file and use put this into the file. 
+![create db command](/cit480-blog/assets/blog-5-sp-dbcreate.png)
+
+### Step: 3 - run the js file!
+Now you run the js file that you created by 
+`node database.js` 
+
+Next it should prompt you that the database has been created! 
+
+### Step: 4 - create a collection
+Now, that is set up go ahead and add these commands to the js file 
+![db creating a collection](/cit480-blog/assets/blog-5-sp-collect.png)
+
+### Step: 5 - checking db
+Finally, to check if the db has been created check through the mongo shell by running the command `mongo --shell` in the terminal.
+
+Next run `show dbs`
+
+Then the databases created should show, and a database named mydb should be present.
+
+And there you go you created and connected a database into your node.js app! 
