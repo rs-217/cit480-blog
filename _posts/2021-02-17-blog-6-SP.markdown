@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Blog 6 SP - Password Hashing"
+date:   2021-04-09 12:00:00 -0700
+categories: Blogs
+---
+# Password Hashing
+Preferably one of the most important subjects when it comes to security is password hashing, or in other words making a user's password/credentials safe and not making it readable for just anyone to view. Recently, when thinking about the schema of our database I had one thing on my mind which was to discover what is the best way to ensure that secrets are meant to stay secret. By hashing a password, it does exactly that.
+
+### What is password hashing?
+![hash diagram](/cit480-blog/assets/blog-6-sp-hash.png)
+Essentially, you take plain text and when it is undergone through a Hashing Algorithm a hashed text will be outputted for a certain hash output (depending on which algorithm to use).
+
+Lets assume that `"Password"` is hashed and going through the MD5 hashing algorithm then spits out `5f4dcc3b5aa765d61d8327deb882cf99`
+
+But then lets hash out `"Password "` now with a space at the end. The MD5 hashing algorithm will spit out a completely different hash! `9f961034ee4de758baf4de09ceeb1a75`
+
+Although even just a space is added into the phrase, it throws off the hash completely! So we can assume the data that matches the hash is the correct password!
+
+### How does authentication work with a hashed password?
+With authentication, a module can handle that work for you! For instance, like passport.js, an authentication middleware used in the node.js environment.
+
+With one of the strategies of Passport.js, it will take the input of a login form submitted by the user. After that has undergone it will check the username (which would be a primary key as each username should be unique) and password. So with the idea in mind that the EXACT password (case sensitive) should have the same hash IF the same hashing algorithm is used.
+
+![authentication diagram](/cit480-blog/assets/blog-6-sp-pass.png)
