@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Blog 7 SP - Sessions vs Tokens"
+date:   2021-04-16 12:00:00 -0700
+categories: Blogs
+---
+# What are sessions/tokens?
+Lets say for example, you login to twitter and you want to view a page. But everytime you view a page it asks you to always log in. How annyoing would that be? With the help with session or tokens, it allows the user (once authenticated of course) to be authorized in order to view the page they requested. Essentially telling the server that the account that has been logged in and authorized to view the pages.
+
+### What's the difference between sessions and tokens?
+Well both, are very similar but both have very different methods on how the user state is stored.
+
+### Sessions
+Using sessions requires the client's state is stored on the server's memory. So once the user logs in the server generates a session ID and then proceeds to send to client to store it in the user's cookies. Then the session ID is often compared from the cookies to the server in order to allow any requests the user has made. Although you may have to keep in mind that if it is stored into the server's memory it may eat up its resources when all users are using the service at once.
+
+### Tokens
+Tokens are similar to sessions but instead of storing the user state into the server's memory, the user state is stored into the client's local storage. Using a token based authentication method, is favorable in RESTful APIs. User data is encrypted into a JWT (Json Web Token) and then sent to the client. So the JWT is sent as a header for every request and then the server validates the web token before responding to the user's request.
+
+![comparisons between sessions and JWT](/cit480-blog/assets/blog-7-sp-comp.png)
