@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Blog 8 SP - JSON Web Tokens"
+date:   2021-04-16 12:00:00 -0700
+categories: Blogs
+---
+This blog post will be a deeper dive at JSON Web Tokens.
+
+# What are JSON Web Tokens?
+A JSON Web token or JWT is a great way to ensure that integrity and authenticity is met when two users/nodes are sharing information between both parties. JWTs ensures that secrets are meant to be kept a secret and that it can be difficult to crack for those using a Man-in-the-middle attack or a replay attack.
+
+JWT provides a secure way to share information between two parties. As JWT ensures integrity and authenticity as each JWT requires a signature at the end of the JWT.
+
+### Disecting a JWT token
+![JWT disection](/cit480-blog/assets/blog-8-sp-jwt.png)
+As you can see the first portion of a JWT contains information of what type of cryptographic algorithm is used as well as the type of information that is being stored.
+
+Next as you can see the purple part of the JWT is the payload or in other words the data that is being sent. The data is ran through the cryptographic algorithm to make people eavesdropping into the network make it seem like mush when data is transmitted
+
+Finally at the end is the signature of the web token to ensure that the sender is who they say they are. 
+
+### Why use JWT?
+JWTs can offer great security and offer many advantages when say compared to using session based. JWTs have lower overhead so there is no need to worry about users eating up resources when there is a heavy load of users trying to access the content. As with session based a session token is kept on the server in memory and then sent later to the user for them to get a way to access the app's resources.
