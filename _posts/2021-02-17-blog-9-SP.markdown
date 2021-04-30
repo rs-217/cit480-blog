@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Blog 9 SP - SQL vs NoSQL"
+date:   2021-04-29 12:00:00 -0700
+categories: Blogs
+---
+![sql vs nosql](/cit480-blog/assets/blog-9-sp-vs.png)
+# SQL vs NoSQL What's the Difference?
+Probably one of the most confusing and strenous things to consider when creating an infrastructure is to decide how and which database to decide to use. The two main databases used in today's industry are SQL or NoSQL.
+
+## SQL
+**Quick background on SQL.**
+SQL is a programming language developed back in the 1970s which was used to manipulate and access data in a database. Although developed very early on, many businesses still rely on this technology because of its stability as well as its security (if configured properly). Eventually, instead of having companies write an SQL for their own databases Oracle decided to create its own database management system called MySQL. MySQL is still popular amongst many companies.
+
+### Use Cases
+SQL is a very powerful query language for defining and manipulating data. SQL is one of the most versatile and most-widely used options today! As it is great for complex queries, but yet can still be very restrictive.
+
+## NoSQL
+NoSQL on the other hand, is a query language that can allow for dynamic schemas for unstructured data and have the ability to store the data in different ways. With NoSQL data can be stored in either colum-oriented, document-oriented, graph-based, or organized as a KeyValue store. This allows the database to create documents without a structure, allowing each document to have its own unique structure, syntax can vary from different databases, and you can add fields as you work on your project.
+
+### Use Cases
+NoSQL is very dynamic and can store many different data types when compared to SQL. Although with the types of data being stored is broad this can make complex queries very difficult to work with, this type of approach is best used with simple queries.
+![types of NoSQL](/cit480-blog/assets/blog-9-sp-type.png)
+
+## Conclusion
+All in all, you can't go wrong with either types of databases as both can provide the same results. Although each can have a greater benefit depending on your use case.
